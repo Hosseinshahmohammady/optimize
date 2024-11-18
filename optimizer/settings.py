@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-+)5i4f&4ltc#8(n=+00)$qxb%9psxb5u-qyg-ni5+)69tvqpev
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost' ,'172.105.38.184']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -78,12 +78,8 @@ WSGI_APPLICATION = 'optimizer.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'postgres',
-        'USER': 'postgres',
-        'PASSWORD':'b9?egXS.Ksj8#%1qa-1yP',
-        'HOST': 'localhost',
-        'PORT': '5432',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 
